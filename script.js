@@ -1,11 +1,11 @@
-const apiId="72d03d947e5fbccb70c86a8e66dfcece"
-const url="https://api.openweathermap.org/data/2.5/weather?&units=metric&q="
+
+const url="https://api.openweathermap.org/data/2.5/weather?&units=metric&appid=72d03d947e5fbccb70c86a8e66dfcece&q="
 let searchBox=document.querySelector('.search input')
 let searchBtn=document.querySelector('.searchBtn')
 let imageIcon=document.querySelector('.imageIcon')
 let imageIconDiv=document.querySelector(".imageIcon")
 async function checkWeather(city){
-    const response=await fetch(url+city+`&appid=${apiId}`)
+    const response=await fetch(url+city)
     var data=await response.json()
     console.log(data)
     console.log(data.name)
