@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    font-family: Poppins;
+    background-color: whitesmoke;
+    color: black;
+}
+.card{
+    height: 450px;
+    width: 380px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.city-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.city-info img{
+    width: 160px;
+}
+
+.temp{
+    font-size:26px;
+}
+.city-name{
+    padding-bottom: 0;
+    font-weight: 500;
+}
+
+.col{
+    display: flex;
+}
+
+input{
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    padding: 0px 25px;
+    margin-top: 1em;
+    height: 40px;
+    width: 240px;
+}
+.searchBtn {
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: 0.7em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.searchBtn img{
+    width: 16px;
+}
+
+.weather-info img{
+    width: 30px;
+}
+
+.col img{
+    height: 50px;
+    width: 45px;
+    padding-top: 10px;
+}
+
+p{
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0px 20px;
+}
+
+.fade-in-image { animation: fadeIn 3s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}  

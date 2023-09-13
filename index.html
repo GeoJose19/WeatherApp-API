@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name(Berlin)" spellcheck="false" data-aos="fade-right">
+            <button class="searchBtn" data-aos="fade-left">
+                <img src="images/search.png" alt="">
+            </button>
+        </div>
+        <div class="city-info"  data-aos="flip-up">
+            <img class="imageIcon" src="images/clear.png" alt="">
+            <h2 class="temp">1°C</h2>
+            <h3 class="city-name">Enter City</h3>
+        </div>
+    
+        <div class="weather-info fade-in-image" >
+            <div class="col">
+                <img src="images/humidity.jpg" alt="">
+                <div class="humidity-div">
+                    <p class="humidity">0%</p>
+                    <p>Humidity</p>
+                </div>
+                
+            </div>
+            <div class="col">
+                <img src="images/wind.png" alt="">
+                <div class="wind-div">
+                    <p class="wind">0.00km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+        AOS.init({
+            duration:800,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
